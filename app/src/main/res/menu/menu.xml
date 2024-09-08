@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        android:checked="true"
+        />
+    <item
+        android:id="@+id/trophy"
+        android:icon="@drawable/trophy"
+        android:title="@string/trophy" />
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/wallet"
+        android:title="@string/wallet" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/t_user"
+        android:title="@string/profile" />
+</menu>

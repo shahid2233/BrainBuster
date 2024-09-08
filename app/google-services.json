@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "652700958391",
+    "project_id": "tork-d3099",
+    "storage_bucket": "tork-d3099.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652700958391:android:e34bf99c916dc1788d5732",
+        "android_client_info": {
+          "package_name": "com.quizapp.tork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652700958391-7q8ddrtcmicda0aa3r89hjbv27v6hpg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW2IIeRD5EA5DqmT8bcPx1f7ZSl1JPj4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652700958391-7q8ddrtcmicda0aa3r89hjbv27v6hpg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
