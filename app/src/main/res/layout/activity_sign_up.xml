@@ -9,16 +9,17 @@
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background">
+        android:background="@color/black">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +41,7 @@
                     android:gravity="center"
                     android:padding="10dp"
                     android:text="@string/heading"
-                    android:textColor="@color/purple_700"
+                    android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -48,7 +49,7 @@
                     android:id="@+id/view"
                     android:layout_width="match_parent"
                     android:layout_height="5dp"
-                    android:background="@color/purple_700" />
+                    android:background="@color/white" />
 
                 <EditText
                     android:id="@+id/s_name"
@@ -56,13 +57,16 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@drawable/edit_text"
-                    android:drawableLeft="@drawable/user"
+                    android:backgroundTint="@color/ash"
                     android:drawablePadding="15dp"
-                    android:drawableTint="@color/purple_700"
+                    android:drawableTint="@color/white"
+                    android:elevation="5dp"
                     android:ems="10"
                     android:hint="Full Name"
                     android:inputType="textPersonName"
-                    android:padding="15dp" />
+                    android:padding="15dp"
+                    android:textColorHint="@color/white"
+                    app:boxStrokeColor="@color/white" />
 
                 <EditText
                     android:id="@+id/s_email"
@@ -70,13 +74,15 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@drawable/edit_text"
-                    android:drawableLeft="@drawable/email"
+                    android:backgroundTint="@color/ash"
                     android:drawablePadding="15dp"
-                    android:drawableTint="@color/purple_700"
+                    android:drawableTint="@color/white"
                     android:ems="10"
                     android:hint="Email"
                     android:inputType="textEmailAddress"
-                    android:padding="15dp" />
+                    android:padding="15dp"
+
+                    android:textColorHint="@color/white" />
 
                 <EditText
                     android:id="@+id/s_psw"
@@ -84,27 +90,14 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@drawable/edit_text"
-                    android:drawableLeft="@drawable/padlock"
+                    android:backgroundTint="@color/ash"
                     android:drawablePadding="15dp"
-                    android:drawableTint="@color/purple_700"
+                    android:drawableTint="@color/white"
                     android:ems="10"
                     android:hint="Password"
                     android:inputType="textPassword"
-                    android:padding="15dp" />
-
-                <EditText
-                    android:id="@+id/ref_code"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/edit_text"
-                    android:drawableLeft="@drawable/code"
-                    android:drawablePadding="15dp"
-                    android:drawableTint="@color/purple_700"
-                    android:ems="10"
-                    android:hint="Refer Code"
-                    android:inputType="textPersonName"
-                    android:padding="15dp" />
+                    android:padding="15dp"
+                    android:textColorHint="@color/white" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/sign_in"
@@ -112,6 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@drawable/button"
+                    android:backgroundTint="#B11349"
                     android:padding="10dp"
                     android:text="Sign In"
                     android:textAllCaps="false"
@@ -131,17 +125,21 @@
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/privacy_policy"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:gravity="center_horizontal"
-                    android:text="Sign up by agreeing to the privacy policy" />
-
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="151dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027"
+            app:srcCompat="@drawable/pp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

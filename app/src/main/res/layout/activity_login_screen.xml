@@ -5,7 +5,7 @@
     android:id="@+id/l_sign_in"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/black"
     tools:context=".LoginScreen">
 
     <androidx.cardview.widget.CardView
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="LOGIN WITH ACCOUNT"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -43,7 +43,7 @@
                 android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
-                android:background="@color/purple_700" />
+                android:background="@color/black" />
 
             <EditText
                 android:id="@+id/l_email"
@@ -52,13 +52,16 @@
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/edit_text"
-                android:drawableLeft="@drawable/email"
+                android:backgroundTint="@color/ash"
+
                 android:drawablePadding="15dp"
-                android:drawableTint="@color/purple_700"
+                android:drawableTint="@color/black"
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:padding="15dp" />
+                android:padding="15dp"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white" />
 
             <EditText
                 android:id="@+id/l_psw"
@@ -66,13 +69,15 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/edit_text"
-                android:drawableLeft="@drawable/padlock"
+                android:backgroundTint="@color/ash"
+
                 android:drawablePadding="15dp"
-                android:drawableTint="@color/purple_700"
+                android:drawableTint="@color/white"
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:padding="15dp" />
+                android:padding="15dp"
+                android:textColorHint="@color/white" />
 
             <TextView
                 android:id="@+id/privacy_policy"
@@ -104,17 +109,60 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/button"
+                android:background="@drawable/edit_text"
+                android:backgroundTint="#943EA2"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="Create an account??"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textColorHighlight="@color/white"
+                android:textSize="18sp"
+                tools:ignore="ExtraText" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="132dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/pp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="188dp"
+        android:layout_height="34dp"
+        android:text="Welcome to "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="176dp"
+        android:layout_height="57dp"
+        android:text="Brain Busters"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
