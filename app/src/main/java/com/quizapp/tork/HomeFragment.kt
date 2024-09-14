@@ -26,7 +26,7 @@ class HomeFragment : Fragment() {
         val database = FirebaseFirestore.getInstance()
         val auth = FirebaseAuth.getInstance()
         val user = auth.currentUser?.displayName
-        val recycler = view.findViewById<RecyclerView>(R.id.cat_items)
+        val recycler = view.findViewById<RecyclerView>(R.id.cardView)
         val data = ArrayList<Category>()
         val adapter = CategoryAdapter(data)
         view.uname.text = user

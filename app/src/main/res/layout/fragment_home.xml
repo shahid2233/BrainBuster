@@ -5,13 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:foregroundTint="@color/purple_200"
     tools:context=".HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/black"
+        android:foregroundTint="@color/white"
         app:layout_constraintVertical_bias="0"
         tools:context=".HomeScreen">
+
 
         <TextView
             android:id="@+id/uname"
@@ -20,7 +24,7 @@
             android:fontFamily="sans-serif-medium"
             android:padding="10dp"
             android:text="name"
-            android:textColor="@color/purple_200"
+            android:textColor="#020202"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,25 +36,16 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/black"
             android:fontFamily="sans-serif-medium"
-            android:text="Let's Play"
             android:padding="20dp"
+            android:text="Let's play"
             android:textColor="@color/white"
             android:textSize="50sp"
-            android:textStyle="bold"
+            android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/uname" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/cat_items"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
