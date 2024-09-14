@@ -49,7 +49,7 @@ class SignUpScreen : AppCompatActivity() {
         email = s_email.text.toString().trim()
         password = s_psw.text.toString().trim()
         name = s_name.text.toString().trim()
-//        refCode = ref_code.text.toString().trim()
+        refCode = ref_code.text.toString().trim()
 
         val user = User(name,email,password,refCode)
 
